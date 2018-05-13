@@ -4,12 +4,12 @@
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
   <bean class="service.horse.HorseServiceImpl" id="horse">
     <constructor-arg
-      value="D:\java_projects\orgepamraceEmulator\src\main\resources\horses.json"></constructor-arg>
+      value="D:\java_projects\orgepamraceEmulator\src\main\resources\horses.json"/>
   </bean>
   <bean class="service.emulation.EmulationServiceImpl" id="emulation" init-method="start">
-    <constructor-arg ref="race"></constructor-arg>
+    <constructor-arg ref="race"/>
   </bean>
   <bean class="service.race.RaceServiceImpl" id="race">
-    <constructor-arg ref="horse"></constructor-arg>
+    <constructor-arg ref="horse"/>
   </bean>
 </beans>
