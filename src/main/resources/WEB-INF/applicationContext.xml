@@ -6,7 +6,7 @@
     <constructor-arg
       value="D:\java_projects\orgepamraceEmulator\src\main\resources\horses.json"></constructor-arg>
   </bean>
-  <bean class="service.emulation.EmulationServiceImpl" id="emulation">
+  <bean class="service.emulation.EmulationServiceImpl" id="emulation" init-method="start">
     <constructor-arg ref="race"></constructor-arg>
   </bean>
   <bean class="service.race.RaceServiceImpl" id="race">
