@@ -9,16 +9,13 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Stream;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class HorseServiceImpl implements HorseService {
 
-  @Value("classpath:horses.json")
-  private String horsesStorageFile;
-
   private List<Horse> allHorses;
+  private String horsesStorageFile = "C:\\Users\\Artem_Kunats\\IdeaProjects\\orgEpamRaceEmulator\\src\\main\\resources\\horses.json";
 
   public HorseServiceImpl() {
     Gson gson = new Gson();
