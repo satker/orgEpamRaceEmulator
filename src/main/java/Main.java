@@ -1,10 +1,12 @@
+import config.RaceConfig;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @ComponentScan
 public class Main {
 
   public static void main(String[] args) {
-    new ClassPathXmlApplicationContext("WEB-INF/applicationContext.xml");
+    new AnnotationConfigApplicationContext(RaceConfig.class);
   }
 }
