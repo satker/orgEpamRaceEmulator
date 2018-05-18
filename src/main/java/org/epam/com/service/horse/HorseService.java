@@ -1,7 +1,7 @@
-package service.horse;
+package org.epam.com.service.horse;
 
-import dao.Horse;
 import java.util.List;
+import org.epam.com.dao.Horse;
 
 public interface HorseService {
 

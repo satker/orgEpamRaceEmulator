@@ -1,21 +1,21 @@
-package service.horse;
+package org.epam.com.service.horse;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import dao.Horse;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Stream;
+import org.epam.com.dao.Horse;
 import org.springframework.stereotype.Component;
 
 @Component
 public class HorseServiceImpl implements HorseService {
 
   private List<Horse> allHorses;
-  private String horsesStorageFile = "C:\\Users\\Artem_Kunats\\IdeaProjects\\orgEpamRaceEmulator\\src\\main\\resources\\horses.json";
+  private String horsesStorageFile = "D:\\java_projects\\orgEpamRaceEmulator\\src\\main\\resources\\horses.json";
 
   public HorseServiceImpl() {
     Gson gson = new Gson();
