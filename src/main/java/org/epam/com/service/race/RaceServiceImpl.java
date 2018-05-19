@@ -8,17 +8,13 @@ import java.util.stream.IntStream;
 import org.epam.com.dao.Horse;
 import org.epam.com.dao.Race;
 import org.epam.com.service.horse.HorseService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
-@Component
 public class RaceServiceImpl implements RaceService {
 
   private HorseService horseService;
   private Race race = new Race();
 
-  @Autowired
-  private RaceServiceImpl(HorseService horseService) {
+  public RaceServiceImpl(HorseService horseService) {
     this.horseService = horseService;
   }
 

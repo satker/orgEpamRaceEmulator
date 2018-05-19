@@ -9,15 +9,12 @@ import java.nio.file.Paths;
 import java.util.List;
 import java.util.stream.Stream;
 import org.epam.com.dao.Horse;
-import org.springframework.stereotype.Component;
 
-@Component
 public class HorseServiceImpl implements HorseService {
 
   private List<Horse> allHorses;
-  private String horsesStorageFile = "D:\\java_projects\\orgEpamRaceEmulator\\src\\main\\resources\\horses.json";
 
-  public HorseServiceImpl() {
+  public HorseServiceImpl(String horsesStorageFile) {
     Gson gson = new Gson();
     Type type = new TypeToken<List<Horse>>() {
     }.getType();

@@ -5,14 +5,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
-import javax.annotation.PostConstruct;
 import org.epam.com.dao.Horse;
 import org.epam.com.dao.Race;
 import org.epam.com.service.race.RaceService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 
-@Component
 public class EmulationServiceImpl implements EmulationService {
 
   public static final String LIMITER = "------------------------------------------------------------";
@@ -20,13 +16,11 @@ public class EmulationServiceImpl implements EmulationService {
 
   private RaceService raceService;
 
-  @Autowired
-  private EmulationServiceImpl(RaceService raceService) {
+  public EmulationServiceImpl(RaceService raceService) {
     this.raceService = raceService;
   }
 
   @Override
-  @PostConstruct
   public void start() {
     while (true) {
       Race race = raceService.getRace();
