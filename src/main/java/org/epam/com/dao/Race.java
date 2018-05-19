@@ -1,4 +1,4 @@
-package dao;
+package org.epam.com.dao;
 
 import java.util.ArrayList;
 import java.util.List;

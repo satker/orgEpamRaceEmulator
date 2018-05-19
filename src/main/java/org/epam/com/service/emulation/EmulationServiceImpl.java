@@ -1,16 +1,16 @@
-package service.emulation;
+package org.epam.com.service.emulation;
 
-import dao.Horse;
-import dao.Race;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 import javax.annotation.PostConstruct;
+import org.epam.com.dao.Horse;
+import org.epam.com.dao.Race;
+import org.epam.com.service.race.RaceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import service.race.RaceService;
 
 @Component
 public class EmulationServiceImpl implements EmulationService {

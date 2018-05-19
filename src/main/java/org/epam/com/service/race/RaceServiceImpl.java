@@ -1,17 +1,17 @@
-package service.race;
+package org.epam.com.service.race;
 
-import dao.Horse;
-import dao.Race;
 import java.time.LocalDateTime;
 import java.util.Collections;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
+import org.epam.com.dao.Horse;
+import org.epam.com.dao.Race;
+import org.epam.com.service.horse.HorseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import service.horse.HorseService;
 
-@Component("Race")
+@Component
 public class RaceServiceImpl implements RaceService {
 
   private HorseService horseService;

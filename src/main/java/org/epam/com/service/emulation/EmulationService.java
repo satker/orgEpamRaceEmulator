@@ -1,4 +1,4 @@
-package service.emulation;
+package org.epam.com.service.emulation;
 
 public interface EmulationService {
 

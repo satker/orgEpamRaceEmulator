@@ -1,7 +1,7 @@
-package service.race;
+package org.epam.com.service.race;
 
-import dao.Race;
 import java.util.List;
+import org.epam.com.dao.Race;
 
 public interface RaceService {
 

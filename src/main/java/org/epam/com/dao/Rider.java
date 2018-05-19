@@ -1,4 +1,4 @@
-package dao;
+package org.epam.com.dao;
 
 import lombok.Builder;
 import lombok.Getter;
